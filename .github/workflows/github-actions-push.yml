@@ -20,4 +20,4 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
-      - run: find ./Playground -name '*.sh' | xargs -r shellcheck
+      - run: find . -name '*.sh' | xargs -r shellcheck
