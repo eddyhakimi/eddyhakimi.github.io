@@ -18,6 +18,9 @@ jobs:
   Run-Shellcheck:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository code
-        uses: actions/checkout@v2
-      - run: find . -name '*.sh' | xargs -r shellcheck
+      - name: ShellCheck
+        uses: ludeeus/action-shellcheck@master
+        with:
+          check_together: 'yes'
+          
+
