@@ -2,4 +2,4 @@
 
 echo '$@'
 name="Hello World"
-
+echo "$name"
